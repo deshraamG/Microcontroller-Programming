@@ -1,5 +1,4 @@
 #include "mbed.h"
-
 Serial pc(SERIAL_TX, SERIAL_RX);
 
 // Green LED
@@ -8,7 +7,7 @@ DigitalOut led1(LED1);
 DigitalOut led2(LED2);
 // Red LED
 DigitalOut led3(LED3);
-
+// Initialise interrupt when user button pressed
 InterruptIn button(USER_BUTTON);
 
 Timeout button_debounce_timeout;
